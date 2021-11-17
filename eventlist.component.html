@@ -1,0 +1,22 @@
+<h1>EventList</h1>
+<table class="table table-hover">
+    <thead><tr>
+        
+        <td>EventId</td>
+        <td>EventName</td>
+        <td>EventLocation</td>
+        <td>EventDate</td>
+        <td>Adminid</td>
+    
+    </tr>
+</thead>
+    <tbody>
+        <tr *ngFor="let sd of eventdata">
+            <td>{{sd.Eventid}}</td>
+            <td>{{sd.Eventname}}</td>
+            <td>{{sd.Location}}</td>
+            <td>{{sd.Eventdate}}</td>
+            <td>{{sd.Adminid}}</td>
+        </tr>
+    </tbody>
+</table>
